@@ -1,0 +1,153 @@
+.details {
+  background-color: lighten($color__secondary--lighten, 10%);
+  /* background-image: url(../img/donuts.png);
+  background-repeat: repeat;
+  background-size: 450px; */
+}
+
+.details__inner {
+  @include container (500px);
+  padding: 20px;
+}
+
+.details__header {
+  text-align: center;
+}
+
+.details__title {
+  margin: auto;
+  max-width: 300px;
+}
+
+.details__subtitle {
+  position: relative;
+  margin: auto;
+  max-width: 500px;
+  padding-bottom: 20px;
+  font-size: 17px;
+
+    &::after {
+    @include underline;
+  }
+}
+
+.details__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.details__item {
+  margin: 20px;
+  padding: 20px 5px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 250px;
+  min-height: 150px;
+
+  background-color: $gray--lightest;
+  border: 3px solid $color__primary;
+  border-radius: 20px;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 250px;
+}
+
+.details__name {
+  @include reset;
+  max-width: 80%;
+  padding-top: 100px;
+  box-sizing: border-box;
+  padding-bottom: 10px;
+
+  font-family: 'nautilus', sans-serif;
+  font-size: 24px;
+  color: $gray--darkest;
+  text-align: center;
+}
+
+.details__description {
+  padding: 0 20px;
+  margin-bottom: 0px;
+  margin-top: auto;
+
+  text-align: center;
+  font-weight: 300;
+}
+
+.details__image {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 0px;
+  right: 20px;
+
+  width: 100%;
+  height: 100px;
+  background-image: url(../img/donut1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--sweet {
+    background-image: url(../img/donut2.png);
+  }
+
+  &--natural {
+    background-image: url(../img/donut3.png);
+  }
+
+  &--delivery {
+    background-image: url(../img/donut4.png);
+  }
+}
+
+@media #{$tablet-widths} {
+
+  .details__inner {
+    @include container (668px);
+    padding: 20px;
+  }
+
+  .details__title {
+    font-size: 52px;
+    max-width: 600px;
+  }
+
+  .details__subtitle {
+    font-size: 24px;
+  }
+
+  .details__text {
+    font-size: 17px;
+  }
+
+  .details__item {
+    width: 40%;
+  }
+
+  .details__name {
+  }
+}
+
+@media #{$desktop-widths} {
+
+  .details__inner {
+
+  @include container (1050px);
+  }
+
+  .details__list {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .details__item {
+    width: 25%;
+  }
+}

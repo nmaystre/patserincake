@@ -1,0 +1,31 @@
+$mobile-widths-only: "(max-width: 767px)";
+$tablet-widths: "(min-width: 768px)";
+$desktop-widths: "(min-width: 1150px)";
+$retina: "(min-resolution: 144dpi), (min-resolution: 1.5dppx)";
+
+
+$color__primary: #D67676;
+$color__secondary: #D6A176;
+$color__thirdly: #533557;
+
+$color__primary--darken: #A16B6B;
+$color__secondary--darken: #A1836B;
+
+$color__primary--darkest: #8B2626;
+$color__secondary--darkest: #8B5426;
+
+$color__primary--lighten: #EB9C9C;
+$color__secondary--lighten: #EBBF9C;
+
+$color__primary--lightest: #EBB1B1;
+$color__secondary--lightest: #edece2;
+
+$gray--lightest: #FFFFFF;
+$gray--lighten: #F2F2F2;
+$gray: #777777;
+$gray--darken: #606060;
+$gray--darkest: #000000;
+
+$items: 5;
+$transition-duration: 0.75s;
+$transition-delay: 0.1s;

@@ -1,0 +1,58 @@
+.reviews {
+  background-color: $color__primary;
+}
+
+.reviews__inner {
+  max-width: 676px;
+  padding: 20px;
+}
+
+.reviews__header {
+  text-align: center;
+}
+
+.reviews__title {
+  position: relative;
+  margin: auto;
+  max-width: 300px;
+  color: $gray--lightest;
+  padding-bottom: 50px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 0px;
+    right: 0px;
+
+    height: 20px;
+
+    background-color: transparent;
+    background-image: url(../img/heart.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+  }
+
+    &::after {
+    @include underline;
+    background-color: $gray--lightest;
+  }
+}
+
+.reviews__item {
+  padding: 20px 20px 0px;
+  text-align: center;
+}
+
+.reviews__text {
+  color: $gray--lightest;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.reviews__author {
+  font-weight: 400;
+  color: $color__secondary--lightest;
+}

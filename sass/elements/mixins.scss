@@ -1,0 +1,21 @@
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin container ($maxwidth) {
+  max-width: $maxwidth;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@mixin underline {
+  position:absolute;
+  content: "";
+  bottom: 0px;
+  left: 50px;
+  right: 50px;
+  height: 2px;
+  background-color: $color__primary;
+}

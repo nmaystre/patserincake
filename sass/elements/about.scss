@@ -1,0 +1,133 @@
+.about {
+}
+
+.about__inner {
+  @include container (500px);
+}
+
+.about__header {
+  text-align: center;
+}
+
+.about__title {
+  margin: auto;
+  max-width: 300px;
+  padding-top: 20px;
+}
+
+.about__subtitle {
+  position: relative;
+
+  margin: auto;
+  max-width: 500px;
+  padding-bottom: 20px;
+
+  font-size: 17px;
+
+    &::after {
+    @include underline;
+  }
+}
+
+.about__list {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.about__text {
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+
+  &--highlight {
+    position: relative;
+    padding-bottom: 50px;
+    font-size: 25px;
+    font-family: 'nautilus', sans-serif;
+    color: $color__primary;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0px;
+      left: 50px;
+      right: 50px;
+
+      height: 30px;
+      background-image: url(../img/muffin2.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.about__block {
+  text-align: center;
+}
+
+@media #{$tablet-widths} {
+
+  .about__inner {
+    @include container (668px);
+    padding: 20px;
+  }
+
+  .about__title {
+    font-size: 52px;
+    max-width: 600px;
+  }
+
+  .about__subtitle {
+    font-size: 24px;
+  }
+
+  .about__text {
+    font-size: 17px;
+
+    &--highlight {
+      font-size: 27px;
+    }
+  }
+
+  .about__btn {
+    font-size: 24px;
+  }
+
+  .about__block {
+    max-width: 400px;
+    margin: auto;
+
+    img {
+      height: 100%;
+      width: auto;;
+    }
+  }
+}
+
+@media #{$desktop-widths} {
+
+  .about__inner {
+
+  @include container (1050px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__header {
+  width: 100%;
+}
+
+.about__list {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.about__block {
+  width: 50%;
+  box-sizing: border-box;
+  height: 400px;
+  }
+}

@@ -1,0 +1,64 @@
+.footer {
+}
+
+.footer__inner {
+  max-width: 676px;
+  padding: 20px;
+  text-align: center;
+}
+
+.socials__intro {
+  max-width: 80%;
+  margin: auto;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.socials__btn {
+  font-size: 0;
+  line-height: 0;
+
+  width: 10px;
+  height: 20px;
+
+  background-image: url(../img/insta.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+  border-radius: 50%;
+
+  &--insta {
+    background-image: url(../img/insta.png);
+  }
+
+  &--vk {
+    background-image: url(../img/vk.png);
+  }
+}
+
+.footer__copyright {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+
+@media #{$tablet-widths} {
+
+  .footer__inner {
+    @include container (668px);
+    padding: 20px;
+  }
+
+  .socials__intro {
+    font-size: 17px;
+    max-width: 600px;
+  }
+}
+
+@media #{$desktop-widths} {
+
+  .footer__inner {
+  @include container (1050px);
+  }
+}
